@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Photographer</title>
+  <style>
+    body {
+      background-color: #ecf0f1;
+      font-family: Arial;
+      padding-top: 50px;
+      text-align: center;
+      background-image:url("https://images.pexels.com/photos/18247300/pexels-photo-18247300.jpeg");
+      background-size: 1000rem;
+      margin-top:80px;
+    }
+    form {
+      background:lightblue;
+      padding:60px 60px 60px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      row-gap:50px;
+      
+    }
+    input, button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 90%;
+      font-size: 16px;
+      border-radius:8px;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h2>Book a Photographer</h2>
+  <form method="POST">
+    <input type="text" name="photographer_id" placeholder="Photographer ID" required>
+    <input type="text" name="user_id" placeholder="Your User ID" required>
+    <input type="date" name="date" required>
+    <button type="submit">Book Now</button>
+  </form>
+</body>
+</html>
+
