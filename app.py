@@ -22,7 +22,7 @@ availability_data = {
 #Home Page
 @app.route('/')
 def home():
-    return render_template('Home.html')
+    return render_template('home.html')
 
 #Booking form route
 @app.route('/book', methods=['GET','POST'])
